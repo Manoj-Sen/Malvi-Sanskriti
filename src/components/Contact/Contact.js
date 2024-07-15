@@ -20,7 +20,7 @@ const Contact = () => {
       query
     };
     
-    axios.post('http://localhost:5000/Submit_Query_Data', qdata).then(response =>{
+    axios.post('https://malvi-sanskriti-backend.onrender.com/Submit_Query_Data', qdata).then(response =>{
       console.log(response.data);
       document.getElementById("display_message").innerHTML=response.data;
       document.getElementById("display_message").style.color="green";

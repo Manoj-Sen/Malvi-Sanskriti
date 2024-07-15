@@ -23,7 +23,7 @@ const Signup = ({ onClose }) => {
   
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:5000/user_reg', user).then(response => {
+    axios.post('https://malvi-sanskriti-backend.onrender.com/user_reg', user).then(response => {
       document.getElementById("display_user_reg").innerHTML = response.data;
       document.getElementById("display_user_reg").style.color = "green";
     }).catch(error => {
